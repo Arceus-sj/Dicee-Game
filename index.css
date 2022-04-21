@@ -1,0 +1,82 @@
+
+body {
+    background-color: #003049;
+    color: #41ead4;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 7rem;
+    font-family: 'Odibee Sans', cursive;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    text-align: center;
+    text-shadow: 3px 3px 1px #014f86;
+    /* border: 1px solid wheat; */
+}
+
+.player-1 {
+    /* border: 1px solid white; */
+    font-family:  'Press Start 2P', cursive;
+    font-size: larger;
+    margin-right: 10px;
+}
+
+.player-2 {
+    /* border: 1px solid white; */
+    font-family:  'Press Start 2P', cursive;
+    font-size: larger;
+    margin-left: 10px;
+}
+.playing-area {
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-el {
+    padding: 5px;
+    margin: 5px;
+    max-width: 100%;
+    height: auto;
+}
+
+.btn {
+    /* border: 1px solid white; */
+    margin-top: 20px;
+}
+
+.button {
+    padding:15px 20px;
+    font-size:20px;
+    text-align:center;
+    cursor: pointer;
+    outline:none;
+    border:none;
+    border-radius:30%;
+    box-shadow: 0 9px #014f86;
+    background-color:#a0f5ea;
+    font-family:  'Press Start 2P', cursive;
+    font-size: larger;
+    color: #03045e;
+}
+
+.button:hover {
+    background-color:#41ead4;
+}
+
+.button:active {
+    background-color:#41ead4;
+    box-shadow:0 5px #03045e;
+    transform: translateY(4px);
+}
