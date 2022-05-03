@@ -33,9 +33,19 @@ function changeImgTORandomValue(randomNumber, playerValue) {
     }
 }
 
-
-function declareWinner(randomNumber1, randomNumber2) {
     
+function declareWinner() {
+
+    //Player-1
+    let randomNumber1 = getRandomNumber(1,7);
+    let firstPlayer = document.querySelector('.player-1 .img-el');
+    changeImgTORandomValue(randomNumber1, firstPlayer)
+
+    //Player-2
+    let randomNumber2 = getRandomNumber(1,7);
+    let secondPlayer = document.querySelector('.player-2 .img-el');
+    changeImgTORandomValue(randomNumber2, secondPlayer);
+
     let winner = document.querySelector('h1');
 
     if(randomNumber1 > randomNumber2) {
@@ -49,15 +59,5 @@ function declareWinner(randomNumber1, randomNumber2) {
     }
 }
 
-//Player-1
-let randomNumber1 = getRandomNumber(1,7);
-let firstPlayer = document.querySelector('.player-1 .img-el');
-changeImgTORandomValue(randomNumber1, firstPlayer)
 
-//Player-2
-let randomNumber2 = getRandomNumber(1,7);
-let secondPlayer = document.querySelector('.player-2 .img-el');
-changeImgTORandomValue(randomNumber2, secondPlayer);
-
-//declare winner
-declareWinner(randomNumber1, randomNumber2);
+document.querySelector('.button').addEventListener('click', declareWinner);
